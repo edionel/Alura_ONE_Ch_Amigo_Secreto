@@ -21,8 +21,6 @@ body {
     background-size: cover; /* Escalar la imagen de fondo */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Banner */
@@ -54,6 +52,7 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
+    overflow: auto; /* Permitir el desplazamiento si la lista es larga */
 }
 
 /* Títulos */
@@ -175,8 +174,7 @@ ul {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    position: relative; /* Cambiado a relative */
 }
 
 /* Responsividad */
